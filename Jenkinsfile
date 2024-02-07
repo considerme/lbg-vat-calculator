@@ -3,12 +3,7 @@ pipeline {
   agent any
 
   stages {
-    stage('Checkout') {
-        steps {
-          // Get some code from a GitHub repository
-          git branch: 'main', url: 'YOUR VAT CALCULATOR REPO HERE'
-        }
-    }
+    
     stage('Install') {
         steps {
             // Install the ReactJS dependencies
